@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="es">
 <head th:fragment="head">
-	<meta charset="UTF-8" />
-	<title th:text="${titulo}"></title>
-	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
-	<link rel="stylesheet" th:href="@{/css/styles.css}"/>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/css/styles.css}" />
 </head>
 <body>
-
-	<header th:fragment="header">
-		
+	<!-- Navegación -->
+	<header th:fragment="header" class="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" th:href="@{/asosegur}"><img class="logo_heaader mx-5" th:src="@{/img/logo_asosegur.png}"></a>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav m-auto">
+					<li class="nav-item active mx-3 "><a class="nav-link" th:href="@{/asosegur}"><i class="fal fa-home-lg-alt"></i>Inicio</a></li>
+					<li class="nav-item mx-3"><a class="nav-link" href="#">Servicios</a></li>
+					<li class="nav-item mx-3"><a class="nav-link" th:href="@{/asosegur/nosotros}">Nosotros</a></li>
+					<li class="nav-item mx-3"><a class="nav-link" th:href="@{/asosegur/contacto}">Contacto</a></li>
+				</ul>
+			</div>
+		</nav>
 	</header>
 	
-	<div class="container py-4"></div>
+	
+	<!-- Contenedor Redes -->
+	<div th:fragment="redes" class="redes-container">
+		<ul>
+			<li><a href="https://www.facebook.com/asosegur1" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="https://www.instagram.com/asosegur/?hl=es-la" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://api.whatsapp.com/send?phone=573112477878&text=&source=&data=&app_absent=" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+		</ul>
+	</div>
 
-
-<footer th:fragment="footer" class="container text-center">
-		<hr/>
+	<!-- Footer -->
+	<footer th:fragment="footer" class="container text-center">
+		<hr />
 		<p>
-			Este proyecto fue desarrollado con STS <br/>
-			&copy; GPI 2020-2. <br/>
-			Todos lo derechos reservados. Términos de uso y privacidad.<br/>
+			Este proyecto fue desarrollado con STS <br /> &copy; GPI 2020-2. <br />
+			Todos lo derechos reservados. Términos de uso y privacidad.<br />
 		</p>
 		<script th:src="@{/js/jquery.min.js}"></script>
 		<script th:src="@{/js/popper.min.js}"></script>
 		<script th:src="@{/js/bootstrap.min.js}"></script>
+		<script src="https://kit.fontawesome.com/ec5134fa39.js" crossorigin="anonymous"></script>
 	</footer>
 </body>
 </html>

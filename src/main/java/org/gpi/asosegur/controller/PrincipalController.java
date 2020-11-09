@@ -12,9 +12,21 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 public class PrincipalController {
 
 	
-	@GetMapping("/principal")
+	@GetMapping("")
 	public String formPrincipal(Model model) {
 		model.addAttribute("titulo", "Asosegur");
 		return "principal/vista_principal";
+	}
+	
+	@GetMapping("/nosotros")
+	public String vNosotros(Model model) {
+		model.addAttribute("titulo", "Nosotros");
+		return "principal/nosotros";
+	}
+	
+	@GetMapping("/contacto")
+	public String vContacto(Model model) {
+		model.addAttribute("titulo", "Contacto");
+		return "principal/contacto";
 	}
 }
