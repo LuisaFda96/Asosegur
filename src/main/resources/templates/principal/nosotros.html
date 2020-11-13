@@ -6,39 +6,42 @@
 	<header th:replace="plantillas/principal :: header"></header>
 
 
-	<div class="container nosotros my-5">
-		<h2 class="text-center mb-5">Más Sobre Nosotros</h2>
-
-		<div class="iconos-nosotros">
-			<div class="iconos">
-				<img alt="construccion" th:src="@{/img/construccion.svg}" class="img-nosotros">
-				<h3 class="titulo-nosotros">Construcción</h3>
-				<p>asdafga</p>
+	<div class="nosotros">
+		<div class="fondo-nosotros mb-5">
+			<div class="contenido-nosotros ">
+				<div class="iconos-nosotros container h-100 d-flex justify-content-center align-items-center">
+					<h2 class="text-1">Más Sobre Nosotros</h2>
+					<div class="iconos">
+						<img alt="construccion" th:src="@{/img/construccion.svg}" class="img-nosotros">
+						<h3 class="titulo-nosotros">Construcción</h3>
+						<p>...</p>
+					</div>
+		
+					<div class="iconos">
+						<img alt="jardineria" th:src="@{/img/jardineria.svg}" class="img-nosotros">
+						<h3 class="titulo-nosotros">Jardinería</h3>
+						<p>...</p>
+					</div>
+		
+					<div class="iconos">
+						<img alt="herramientas" th:src="@{/img/herramientas.svg}" class="img-nosotros">
+						<h3 class="titulo-nosotros">Compra y Venta de Herramientas</h3>
+						<p>...</p>
+					</div>
+		
+					<div class="iconos">
+						<img alt="aseo" th:src="@{/img/aseo.svg}" class="img-nosotros">
+						<h3 class="titulo-nosotros">Aseo</h3>
+						<p>...</p>
+					</div>
+				</div>	
 			</div>
-
-			<div class="iconos">
-				<img alt="jardineria" th:src="@{/img/jardineria.svg}" class="img-nosotros">
-				<h3 class="titulo-nosotros">Jardinería</h3>
-				<p>asdafga</p>
-			</div>
-
-			<div class="iconos">
-				<img alt="herramientas" th:src="@{/img/herramientas.svg}" class="img-nosotros">
-				<h3 class="titulo-nosotros">Compra y Venta de Herramientas</h3>
-				<p>asdafga</p>
-			</div>
-
-			<div class="iconos">
-				<img alt="aseo" th:src="@{/img/aseo.svg}" class="img-nosotros">
-				<h3 class="titulo-nosotros">Aseo</h3>
-				<p>asdafga</p>
-			</div>
-		</div>
-
-		<hr />
-
-		<section class="quien-somos">
-			<h2 class="text-center my-3 tex">¿Quiénes Somos?</h2>
+		</div> <!-- sección mas sobre nosotros -->
+		
+		<div class="container">		
+			<hr />	
+			<section class="quien-somos">
+				<h2 class="text-center my-3 text-2">¿Quiénes Somos?</h2>
 			
 				<article class="texto-quien-somos">
 					<p>Somos una empresa con 8 años de experiencia comprobada que
@@ -62,12 +65,11 @@
 						mantenimiento en jardinería.
 					</p>
 				</article>
-		</section><!-- 	seccion quien somos -->
+		</section>
+		</div><!-- 	sección quien somos -->
 		
+				
 		
-		
-		
-
 	</div>
 
 
