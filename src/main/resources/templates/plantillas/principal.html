@@ -11,7 +11,7 @@
 </head>
 <body>
 	<!-- Navegación -->
-	<header th:fragment="header" class="header">
+	<!--<header th:fragment="header" class="header">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" th:href="@{/asosegur}"><img class="logo_heaader mx-5" th:src="@{/img/logo_asosegur.png}"></a>
 			
@@ -29,9 +29,29 @@
 				<span class="text-nav">Comuníquese con nosotros</span>
 			</div>
 		</nav>
+	</header> -->
+	
+	
+	<header th:fragment="header" class="header">
+		<div class="logo logo-main">Asosegur</div>
+		
+		<div class="nav">
+			<div class="wrap">
+				<div class="logo logo-small">Asosegur</div>
+				<nav>
+					<ul>
+						<li><a th:href="@{/asosegur}">Inicio</a></li>
+						<li><a href="">Servicios</a></li>
+						<li><a th:href="@{/asosegur/nosotros}">Nosotros</a></li>
+						<li><a th:href="@{/asosegur/contacto}">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		<i class="fas fa-ellipsis-v btn-menu"></i>
+	
 	</header>
-	
-	
 	
 	<!-- Contenedor Redes -->
 	<div th:fragment="redes" class="redes-container">
@@ -49,13 +69,14 @@
 		<img th:src="@{/img/logo_asosegur.png}" class="logo-footer my-3">
 		
 		<p>
-			Proyecto desarrollado por grupo N°3 <br /> &copy; GPI 2020-2. <br />
+			Grupo N°3 GPI 2020-2.<br /> &copy;	
 			Todos lo derechos reservados. Términos de uso y privacidad.<br />
 		</p>
 		<script th:src="@{/js/jquery.min.js}"></script>
 		<script th:src="@{/js/popper.min.js}"></script>
 		<script th:src="@{/js/bootstrap.min.js}"></script>
 		<script src="https://kit.fontawesome.com/ec5134fa39.js" crossorigin="anonymous"></script>
+		<script th:src="@{/js/script.js}"></script>
 	</footer>
 </body>
 </html>
