@@ -14,7 +14,7 @@ public class PrincipalController {
 	
 	@GetMapping("")
 	public String formPrincipal(Model model) {
-		model.addAttribute("titulo", "Asosegur");
+		model.addAttribute("titulo", "Asosegur | Bienvenidos");
 		return "principal/vista_principal";
 	}
 	

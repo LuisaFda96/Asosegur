@@ -74,16 +74,49 @@
 	font-size: 28px;
 }
 
-.text-nav {
-	font-size: 9px;
-	margin-left: 20px;
+
+/*Pág inicio*/
+.main{
+	min-height: 500px;
+	background-image: linear-gradient(to top, rgba(161,196,253,0.6) 0%, rgba(194,233,251,0.6) 100%), url("../img/i.jpg") ;
+	margin-top: 65px;
+	padding: 80px 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.phone {
-	font-size: 18px;
-	font-weight: bold;
-	color: #023840;
+.cabecera{
+	text-align: center;
+	color: #000;
 }
+
+.contedor-inicio{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cabecera h1{
+	font-size: 70px;
+	margin-bottom: 40px;
+	color: #046f80;
+}
+
+.cabecera p{
+	font-size: 24px;
+}
+
+
+
+
+/*Fin pág inicio*/
+
+
+
+
+
 
 
 /* Navegación */
@@ -120,6 +153,7 @@
 	backface-visibility: hidden;
 	transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0,0,0);
+	border-bottom: 4px solid #046F80;
 }
 
 .nav .wrap{
@@ -130,6 +164,11 @@
 
 nav{
 	display: inline-block;
+}
+
+nav .actual a{
+	color: #046F80;
+	font-weight: bold;
 }
 
 nav ul{
@@ -155,11 +194,7 @@ nav a{
 nav a:hover{
 	color: #fff;
 	background: #046F80;
-}
-
-.main{
-	background: #fff;
-	padding: 80px 60px;
+	text-decoration: none;
 }
 
 body.nav_fixed .nav{
@@ -205,7 +240,7 @@ body.nav_fixed .nav .wrap{
 	}
 	
 	.nav{
-		width: 60%;
+		width: 50%;
 		position: fixed;
 		top: 0;
 		height: 100vh;
@@ -241,25 +276,16 @@ body.nav_fixed .nav .wrap{
 		display: block;
 		padding: 20px;
 		margin: 0;
+		text-decoration: none;
 	}
 
 	.nav-toggle{
 		transition: all 300ms cubic-bezier(1,0,0,1);
 		transform: translateX(0%); 
 	}
-
-
 }
-
-
-
-
-
-
-
-
-
 /* Fin navegación*/
+
 
 /* Formulario de contacto*/
 .cotenedor-contacto {
