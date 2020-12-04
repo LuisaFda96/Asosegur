@@ -3,7 +3,9 @@
 <head th:replace="plantillas/principal :: head"></head>
 <body>
 
-	<div id="carouselExampleCaptions" class="carousel slide"
+	<header th:replace="plantillas/principal :: header"></header>
+
+	<div id="carouselExampleCaptions" class="carousel slide carrusel"
 		data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleCaptions" data-slide-to="0"
@@ -115,13 +117,14 @@
 				</div>
 				<figure class="jardineria-img">
 					<img class="diseño-jardineria" th:src="@{/img/herramientas.jpg}" />
-				</figure>
-
+				</figure> 
 			</article>
-		</div>
-
+		</div> 
 	</section>
-	<head th:replace="plantillas/principal :: footer"></head>
+	
+	<div th:replace="plantillas/principal :: redes"></div>
+	<footer th:replace="plantillas/principal :: footer"></footer>
+	
 </body>
 
 </html>

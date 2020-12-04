@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
 	margin: 0;
 	padding: 0;
@@ -8,8 +7,15 @@
 .wrapper {
   min-height: calc(100% - 4rem);
 }
-
 :root { 
+	--primary-font: 'Bree Serif', serif; 
+	--secondary-font: 'Roboto', sans-serif; 
+	--blanco: #fff; 
+	--color1: #003740;
+	--color2: #046F80;
+	--color3: #07DCFF;
+	--color4: #023840;
+	--color5: #07C8E6;
 	--facebook: #3b5999; 
 	--instagram: #e4405f; 
 	--whatsapp: #4AC959;
@@ -76,16 +82,20 @@
 }
 
 
-/*Pág inicio*/
+/*Pág inicio   rgba(161,196,253,0.6) 0%, rgba(194,233,251,0.6)*/
 .main{
 	min-height: 500px;
-	background-image: linear-gradient(to top, rgba(161,196,253,0.6) 0%, rgba(194,233,251,0.6) 100%), url("../img/i.jpg") ;
+	background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.7) 100%), url("../img/i.jpg") ;
 	margin-top: 65px;
 	padding: 80px 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.carrusel{
+	margin-top: 65px;
 }
 
 .cabecera{
@@ -103,6 +113,7 @@
 	font-size: 70px;
 	margin-bottom: 40px;
 	color: #046f80;
+	font-family: var(--primary-font);
 }
 
 .cabecera p{
@@ -119,7 +130,9 @@
 	margin-bottom: 40px;
 }
 
-
+.fuente-titulo{
+	font-family: var(--primary-font);
+}
 
 
 
@@ -136,6 +149,7 @@
 
 .logo{
 	font-size: 70px;
+	font-family: var(--primary-font);
 }
 
 .logo-main{
@@ -476,11 +490,12 @@ body.nav_fixed .nav .wrap{
 }
 
 .parte-1{
-	background: url("../img/bg.jpg");
+	background-image:  radial-gradient(circle, rgba(176,174,238,0.5) 0%, rgba(29,30,31,0.5) 100%), url("../img/bg.jpg");
 	background-position: center; 
   	background-repeat: no-repeat;
   	background-size: cover;
   	height: 100vh;
+  	width: 100%;
   	display: flex;
    	align-items: center;
    	justify-content: center;
@@ -488,7 +503,7 @@ body.nav_fixed .nav .wrap{
 
 .contenido-parte-1{
 	background: rgba(0,0,0,.3);
-	width: 100%;
+	width: 80%;
    	padding: 20px;
 }
 
@@ -525,18 +540,6 @@ body.nav_fixed .nav .wrap{
   background-color: #4CAF50;
   color: #fff;
 }
-=======
-:root { -
-	--primary-font: 'Bree Serif', serif; 
-	--secondary-font: 'Roboto', sans-serif; 
-	--blanco: #fff; 
-	--color1: #003740;
-	--color2: #046F80;
-	--color3: #07DCFF;
-	--color4: #023840;
-	--color5: #07C8E6;
-}
-
 
 .titulo-dos{
 	color: red;
@@ -653,4 +656,4 @@ body.nav_fixed .nav .wrap{
 	height: inherit;
 	flex-wrap: inherit;
 }
->>>>>>> servicios
+/*  servicios */
