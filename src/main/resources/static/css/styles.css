@@ -35,7 +35,29 @@
 /* 	font-weight: 600; */
 	
 }
+.agendar-servicio{
+	padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: transparent;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    align-items: center;
+    font-family: var(--secondary-font);
+    margin-bottom: 60px;
+    border-radius:5px;
 
+}
+.agendar-servicio:hover{
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration:none
+}
 
 .briefcase {
 	background: #fafafa;
