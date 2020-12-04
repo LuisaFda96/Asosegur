@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-:root { -
+:root {
 	--primary-font: 'Bree Serif', serif; 
 	--secondary-font: 'Roboto', sans-serif; 
 	--blanco: #fff; 
@@ -127,9 +125,7 @@
 	height: inherit;
 	flex-wrap: inherit;
 }
-=======
-=======
->>>>>>> principal
+
 * {
 	margin: 0;
 	padding: 0;
@@ -154,7 +150,6 @@
 	--whatsapp: #4AC959;
 }
 
-<<<<<<< HEAD
 .fuente-titulo{
 	font-family: var(--primary-font);
 }
@@ -163,8 +158,6 @@
 	font-family: var(--secondary-font);
 }
 
-=======
->>>>>>> servicios
 .redes-container {
 	display: flex;
 	height: 30px;
@@ -743,10 +736,7 @@ body.nav_fixed .nav .wrap{
 .button:hover {
   background-color: #4CAF50;
   color: #fff;
-}
-<<<<<<< HEAD
->>>>>>> principal
-=======
+} 
 
 .titulo-dos{
 	color: red;
@@ -864,4 +854,4 @@ body.nav_fixed .nav .wrap{
 	flex-wrap: inherit;
 }
 /*  servicios */
->>>>>>> principal
+
