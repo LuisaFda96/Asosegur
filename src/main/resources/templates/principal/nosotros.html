@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head th:replace="plantillas/principal :: head"></head>
+<body>
+
+	<header th:replace="plantillas/principal :: header"></header>
+
+
+	<div class="container nosotros my-5">
+		
+		<div class="parte-1 row mb-5">
+			<div class="contenido-parte-1">
+				<h2 class="text-center mb-5 text-white">Más Sobre Nosotros</h2>
+
+				<div class="iconos-nosotros">
+					<div class="iconos">
+						<img alt="construccion" th:src="@{/img/construccion.svg}" class="img-nosotros">
+						<h3 class="titulo-nosotros">Construcción</h3>
+						<p>...</p>
+					</div>
+		
+					<div class="iconos">
+						<img alt="jardineria" th:src="@{/img/jardineria.svg}" class="img-nosotros">
+						<h3 class="titulo-nosotros">Jardinería</h3>
+						<p>...</p>
+					</div>
+		
+					<div class="iconos">
+						<img alt="herramientas" th:src="@{/img/herramientas.svg}" class="img-nosotros">
+						<h3 class="titulo-nosotros">Compra y Venta de Herramientas</h3>
+						<p>...</p>
+					</div>
+		
+					<div class="iconos">
+						<img alt="aseo" th:src="@{/img/aseo.svg}" class="img-nosotros">
+						<h3 class="titulo-nosotros">Aseo</h3>
+						<p>...</p>
+					</div>
+				</div>
+				
+				<a class="button" th:href="@{/asosegur/contacto}">Contactamos</a>
+				
+			</div>
+		</div>	
+	
+		
+
+		<hr />
+
+		<section class="quien-somos">
+			<h2 class="text-center my-3 tex">¿Quiénes Somos?</h2>
+			
+				<article class="texto-quien-somos">
+					<p>Somos una empresa con 8 años de experiencia comprobada que
+						mejora la presentación y la asepsia de sus instalaciones utilizando
+						personal idóneo, debidamente seleccionado y capacitado, en el uso
+						de productos, maquinaria y accesorios para el ase o integral.
+					</p>
+	
+					<p>Especialistas en la aplicación de técnicas profesionales de
+						limpieza ponemos a su disposición las mejores alternativas en el
+						cuidado y protección de superficies e instalaciones en general.
+					</p>
+	
+					<p>Contamos con tecnología aplicada para la limpieza,
+						protección, desinfección y mantenimiento implementados en el aseo
+						industrial, hospitalario, comercial e institucional.
+					</p>
+	
+					<p>En desarrollo de nuestro proceso integral ejecutamos también
+						mantenimiento, control integrado y fumigación de plagas, diseño y
+						mantenimiento en jardinería.
+					</p>
+				</article>
+		</section><!-- 	seccion quien somos -->
+		
+		
+		
+		
+
+	</div>
+
+
+	<div th:replace="plantillas/principal :: redes"></div>
+	<footer th:replace="plantillas/principal :: footer"></footer>
+
+</body>
+</html>

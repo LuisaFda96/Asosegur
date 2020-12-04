@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head th:replace="plantillas/principal :: head">
+	<link rel="stylesheet" th:href="@{/css/contacto.css}"/>
+</head>
+<body>
+
+	<header th:replace="plantillas/principal :: header"></header>
+	
+	
+	<div class="cotenedor-contacto my-5">
+		<div class="contacto-form">
+			<h1>Datos de Contacto</h1>
+			<h2><i class="fas fa-phone-alt"></i> Telefono</h2>
+			<p>311 2477878</p>
+			<h2><i class="fas fa-envelope-square"></i> Correo</h2>
+			<p>contacto@asoseguronline.com</p>
+			<h2><i class="fas fa-map-marker-alt"></i> Dirreción</h2>
+			<p>Calle 48 N° 38 - 28 Oficina 1402 <br>
+				Medellín - Antioquía</p>
+		</div>
+		
+		<div class="contacto-form">
+			<h1>Escríbenos</h1>
+			
+			<form action="">
+				<input type="text" placeholder="Nombre Completo" class="contacto-form-input">
+				<input type="text" placeholder="Correo" class="contacto-form-input">
+				<input type="text" placeholder="Asunto" class="contacto-form-input">
+				<textarea placeholder="Mensaje" class="contacto-form-textarea"></textarea>
+				<input type="submit" value="ENVIAR" class="contacto-form-btn">
+			</form>
+		</div>
+		
+		<div class="contacto-form">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.328533426975!2d-75.56309843747476!3d6.242070302051652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428598441d2e3%3A0x5bbfddd04b88c0db!2sCl.%2048%20%2338-28%20Oficina%201402%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1604962452760!5m2!1ses!2sco" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+		
+	</div>
+	
+	
+	<div th:replace="plantillas/principal :: redes"></div>
+	<footer th:replace="plantillas/principal :: footer"></footer>
+	
+</body>
+</html>

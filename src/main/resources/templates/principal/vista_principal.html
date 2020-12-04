@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head th:replace="plantillas/principal :: head"></head>
+<body>
+
+	<header th:replace="plantillas/principal :: header"></header>
+	
+	
+	<div class="container">
+		
+		<section class="cabecera"> 
+			<div class="main">
+				<h1>Asosegur</h1>
+				<p>Lideres en calidad y buen servicio a nivel de obras civiles, <br>
+				diseño, jardinería y aseo en todas las áreas.</p>
+			</div>
+		</section>
+		
+		
+		<section class="parte-2-inicio">
+			<div class="">
+				<h2>¿Porqué elegirnos?</h2>
+				<p>Somos una empresa dedicada a ser líder <br>
+				en calidad y buen servicio a nivel de obras civiles , <br>
+				diseño , jardinería , y aseo en todas las áreas <br>
+				logrando así hacer parte de su excelente equipo 
+				de trabajo.</p>
+				
+				<a class="" th:href="@{/asosegur/contacto}">Solicita más información</a>
+			</div>
+				
+		</section>
+		
+	</div>
+	
+	<div th:replace="plantillas/principal :: redes"></div>
+	<footer th:replace="plantillas/principal :: footer"></footer>
+	
+</body>
+</html>

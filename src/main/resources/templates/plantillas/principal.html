@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="es">
 <head th:fragment="head">
 <meta charset="UTF-8" />
+<<<<<<< HEAD
 <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
 <link rel="stylesheet" th:href="@{/css/styles.css}" />
 <!-- 	<link rel="icon" th:ref="@{/static/icons/favicon.ico}"/> -->
@@ -56,3 +57,82 @@
 </body>
 </html>
 
+=======
+<title th:text="${titulo}"></title>
+<link rel="shortcut icon" th:href="@{/img/asosegur.ico}" />
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+	<!-- Navegación -->
+	<!--<header th:fragment="header" class="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" th:href="@{/asosegur}"><img class="logo_heaader mx-5" th:src="@{/img/logo_asosegur.png}"></a>
+			
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav m-auto">
+					<li class="nav-item"><a class="nav-link" th:href="@{/asosegur}"><i class="fal fa-home-lg-alt"></i>Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/asosegur/nosotros}">Nosotros</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/asosegur/contacto}">Contacto</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<span class="phone"><i class="fas fa-mobile-alt img-phone"></i> 311 2477878 <br/></span>
+				<span class="text-nav">Comuníquese con nosotros</span>
+			</div>
+		</nav>
+	</header> -->
+	
+	
+	<header th:fragment="header" class="header">
+		<div class="logo logo-main">Asosegur</div>
+		
+		<div class="nav">
+			<div class="wrap">
+				<div class="logo logo-small">Asosegur</div>
+				<nav>
+					<ul>
+						<li class="actual"><a th:href="@{/asosegur}">Inicio</a></li>
+						<li ><a href="">Servicios</a></li>
+						<li ><a th:href="@{/asosegur/nosotros}">Nosotros</a></li>
+						<li ><a th:href="@{/asosegur/contacto}">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		<i class="fas fa-ellipsis-v btn-menu"></i>
+	
+	</header>
+	
+	<!-- Contenedor Redes -->
+	<div th:fragment="redes" class="redes-container">
+		<ul>
+			<li><a href="https://www.facebook.com/asosegur1" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="https://www.instagram.com/asosegur/?hl=es-la" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://api.whatsapp.com/send?phone=573112477878&text=&source=&data=&app_absent=" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+		</ul>
+	</div>
+
+	<!-- Footer -->
+	<footer th:fragment="footer" class="container text-center">
+		<hr />
+		
+		<img th:src="@{/img/logo_asosegur.png}" class="logo-footer my-3">
+		
+		<p>
+			Grupo N°3 GPI, copyright &copy; 2020-2 	
+		</p>
+		<script th:src="@{/js/jquery.min.js}"></script>
+		<script th:src="@{/js/popper.min.js}"></script>
+		<script th:src="@{/js/bootstrap.min.js}"></script>
+		<script src="https://kit.fontawesome.com/ec5134fa39.js" crossorigin="anonymous"></script>
+		<script th:src="@{/js/script.js}"></script>
+	</footer>
+</body>
+</html>
+>>>>>>> principal

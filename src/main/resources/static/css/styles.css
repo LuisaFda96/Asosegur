@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root { -
 	--primary-font: 'Bree Serif', serif; 
 	--secondary-font: 'Roboto', sans-serif; 
@@ -125,3 +126,531 @@
 	height: inherit;
 	flex-wrap: inherit;
 }
+=======
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: calc(100% - 4rem);
+}
+
+:root { 
+	--facebook: #3b5999; 
+	--instagram: #e4405f; 
+	--whatsapp: #4AC959;
+}
+
+.logo_header {
+	width: 10px;
+	height: 30px;
+}
+
+.redes-container {
+	display: flex;
+	height: 30px;
+	align-items: center;
+	justify-content: center;
+/* 	position: absolute; */
+	bottom: 5px;
+	right: 10px;
+	position:fixed; bottom:0; z-index:999999;
+}
+
+.redes-container ul li {
+	display: inline-block;
+	margin: 0 5px;
+	width: 40px;
+	text-align: center;
+}
+
+.redes-container ul li a {
+	display: block;
+	padding: 0 10px;
+	background: #333;
+	color: #fff;
+	line-height: 40px;
+	font-size: 16px;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
+	transition: .2s;
+}
+
+.redes-container ul:hover a {
+	filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+	transform: tranlateY(-3px) scale(1.05);
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
+	filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+	background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover {
+	background: var(--instagram);
+}
+
+.redes-container ul li .whatsapp:hover {
+	background: var(--whatsapp);
+}
+
+.img-phone {
+	font-size: 28px;
+}
+
+
+/*Pág inicio*/
+.main{
+	min-height: 500px;
+	background-image: linear-gradient(to top, rgba(161,196,253,0.6) 0%, rgba(194,233,251,0.6) 100%), url("../img/i.jpg") ;
+	margin-top: 65px;
+	padding: 80px 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.cabecera{
+	text-align: center;
+	color: #000;
+}
+
+.contedor-inicio{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cabecera h1{
+	font-size: 70px;
+	margin-bottom: 40px;
+	color: #046f80;
+}
+
+.cabecera p{
+	font-size: 24px;
+}
+
+.parte-2-inicio{
+	text-align: center;
+	margin-top: 60px;
+}
+
+.parte-2-inicio h2{
+	font-size: 36px;
+	margin-bottom: 40px;
+}
+
+
+
+
+
+/*Fin pág inicio*/
+
+
+
+
+
+
+
+/* Navegación */
+
+
+.logo{
+	font-size: 70px;
+}
+
+.logo-main{
+	height: 150px;
+	padding: 20px;
+	background: #046F80;
+	color: #fff;
+	cursor: default;
+}
+
+.logo-small{
+	display: inline-block;
+	font-size: 20px;
+	padding: 4px;
+	margin-right: 50px;
+	color: #046F80;
+	cursor: pointer;
+}
+
+.nav{
+	float: left;
+	width: 100%;
+	background: #222;
+	color: #fff;
+	padding: 0 20px;
+	transition: .3s ease all;
+	backface-visibility: hidden;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	border-bottom: 4px solid #046F80;
+}
+
+.nav .wrap{
+	position: relative;
+	left: -150px;
+	transition: 0.4s ease all;
+}
+
+nav{
+	display: inline-block;
+}
+
+nav .actual a{
+	color: #046F80;
+	font-weight: bold;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+nav a{
+	display: block;
+	padding: 20px;
+	margin: 0;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.2s ease all;
+}
+
+nav a:hover{
+	color: #fff;
+	background: #046F80;
+	text-decoration: none;
+}
+
+body.nav_fixed .nav{
+	position: fixed;
+	top: 0;
+}
+
+body.nav_fixed .nav .wrap{
+	left: 0;
+}
+
+.btn-menu{
+	width: 60px;
+	height: 60px;
+	padding: 22px;
+	text-align: center;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background:  #046F80;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+	transition: all 500ms cubic-bezeir(1,0,0,1);
+	transform: translateX(100px);
+}
+
+.btn-menu:hover{
+	transform: scale(1.2);
+	background: #42acfa;
+}
+
+
+/* Menu Responsive*/
+
+@media screen and (max-width: 800px){
+	.btn-menu{
+		transform: translateX(0px);
+	}
+	
+	.logo-main{
+		display: none;
+	}
+	
+	.nav{
+		width: 50%;
+		position: fixed;
+		top: 0;
+		height: 100vh;
+		padding: 0px;
+		transform: translateX(-100%);
+	}
+	
+	.nav .wrap{
+		left: 0;
+	}
+	
+	nav{
+		width: 100%;
+		position: absolute;
+		top: 60px;
+	}
+	
+	nav li{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	
+	.logo-small{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	
+	nav a{
+		width: 100%;
+		display: block;
+		padding: 20px;
+		margin: 0;
+		text-decoration: none;
+	}
+
+	.nav-toggle{
+		transition: all 300ms cubic-bezier(1,0,0,1);
+		transform: translateX(0%); 
+	}
+}
+/* Fin navegación*/
+
+
+/* Formulario de contacto*/
+.cotenedor-contacto {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contacto-form {
+	padding: 40px 30px;
+}
+
+.contacto-form:nth-child(1) {
+	flex: 30%;
+	background: url("../img/2.jpg");
+	color: #fff;
+}
+
+.contacto-form:nth-child(2) {
+	flex: 45%;
+	background: #046F80;
+}
+
+.contacto-form:nth-child(3) {
+	flex: 25%;
+	padding: 0;
+}
+
+.contacto-form h1 {
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.contacto-form h2 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.contacto-form h2 i {
+	font-size: 14px;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	background: #f5f5f5;
+	color: #000;
+	border-radius: 50px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.contacto-form p {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.contacto-form form {
+	width: 100%;
+	height: auto;
+}
+
+.contacto-form-input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-left: 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.contacto-form-input::placeholder {
+	color: #fff;
+}
+
+.contacto-form-textarea {
+	width: 100%;
+	height: 140px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-top: 5px; padding-left : 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	padding-left: 5px
+}
+
+.contacto-form-textarea::placeholder {
+	color: #fff;
+}
+
+.contacto-form-btn {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.contacto-form-btn:hover {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	background: #fff;
+	color: #046F80;
+	font-size: 12px;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.contacto-form iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+	.contacto-form:nth-child(1) {
+		flex: 50%;
+	}
+	.contacto-form:nth-child(2) {
+		flex: 50%;
+	}
+	.contacto-form:nth-child(3) {
+		flex: 100%;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.contacto-form:nth-child(1) {
+		flex: 50%;
+	}
+	.contacto-form:nth-child(2) {
+		flex: 50%;
+	}
+	.contacto-form:nth-child(3) {
+		flex: 100%;
+	}
+}
+
+/* Nosotros */
+.iconos-nosotros{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+.iconos{
+	flex-basis: calc(25% - 1rem);
+	text-align: center;
+}
+
+.img-nosotros{
+	width: 70px;
+	height: 70px;
+	margin-bottom: 5px;
+}
+
+.parte-1{
+	background: url("../img/bg.jpg");
+	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	height: 100vh;
+  	display: flex;
+   	align-items: center;
+   	justify-content: center;
+}
+
+.contenido-parte-1{
+	background: rgba(0,0,0,.3);
+	width: 100%;
+   	padding: 20px;
+}
+
+.quien-somos{
+	margin-top: 60px;
+}
+
+.texto-quien-somos{
+	text-align: justify;
+	margin-top: 60px;
+	margin-bottom: 80px;
+	column-count: 2;
+	column-gap: 5em;
+	column-rule: solid 1px #ccc;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: transparent; 
+  color: #fff; 
+  border: 2px solid #4CAF50;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+>>>>>>> principal
