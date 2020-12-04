@@ -139,6 +139,7 @@
 .wrapper {
   min-height: calc(100% - 4rem);
 }
+
 :root { 
 	--primary-font: 'Bree Serif', serif; 
 	--secondary-font: 'Roboto', sans-serif; 
@@ -153,17 +154,11 @@
 	--whatsapp: #4AC959;
 }
 
-.logo_header {
-	width: 10px;
-	height: 30px;
-}
-
 .redes-container {
 	display: flex;
 	height: 30px;
 	align-items: center;
 	justify-content: center;
-/* 	position: absolute; */
 	bottom: 5px;
 	right: 10px;
 	position:fixed; bottom:0; z-index:999999;
@@ -207,10 +202,6 @@
 
 .redes-container ul li .whatsapp:hover {
 	background: var(--whatsapp);
-}
-
-.img-phone {
-	font-size: 28px;
 }
 
 
@@ -271,7 +262,7 @@
 }
 
 
-.btn {
+.bttn {
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -288,7 +279,7 @@
   margin-bottom: 60px;
 }
 
-.btn:hover {
+.bttn:hover {
   background-color: #4CAF50;
   color: #fff;
 }
@@ -311,7 +302,7 @@
 .logo{
 	font-size: 70px;
 	font-family: var(--primary-font);
-}px
+}
 
 .logo-main{
 	height: 150px;
