@@ -7,6 +7,7 @@
 .wrapper {
   min-height: calc(100% - 4rem);
 }
+
 :root { 
 	--primary-font: 'Bree Serif', serif; 
 	--secondary-font: 'Roboto', sans-serif; 
@@ -21,9 +22,12 @@
 	--whatsapp: #4AC959;
 }
 
-.logo_header {
-	width: 10px;
-	height: 30px;
+.fuente-titulo{
+	font-family: var(--primary-font);
+}
+
+.fuente{
+	font-family: var(--secondary-font);
 }
 
 .redes-container {
@@ -31,7 +35,6 @@
 	height: 30px;
 	align-items: center;
 	justify-content: center;
-/* 	position: absolute; */
 	bottom: 5px;
 	right: 10px;
 	position:fixed; bottom:0; z-index:999999;
@@ -77,12 +80,8 @@
 	background: var(--whatsapp);
 }
 
-.img-phone {
-	font-size: 28px;
-}
 
-
-/*Pág inicio   rgba(161,196,253,0.6) 0%, rgba(194,233,251,0.6)*/
+/*Pï¿½g inicio   rgba(161,196,253,0.6) 0%, rgba(194,233,251,0.6)*/
 .main{
 	min-height: 500px;
 	background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.7) 100%), url("../img/i.jpg") ;
@@ -130,9 +129,48 @@
 	margin-bottom: 40px;
 }
 
-.fuente-titulo{
-	font-family: var(--primary-font);
+.parte-2-inicio p{
+	font-size: 24px;
 }
+
+.btn-inicio{
+	width: 60px;
+	height: 60px;
+	padding: 22px;
+	text-align: center;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background:  #046F80;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+	transition: all 500ms cubic-bezeir(1,0,0,1);
+	transform: translateX(100px);
+}
+
+.btn-inicio:hover{
+	transform: scale(1.2);
+	background: #42acfa;
+}
+
+.bttn {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: transparent; 
+  color: #4CAF50; 
+  border: 2px solid #4CAF50;
+  align-items: center;
+  font-family: var(--secondary-font);
+  margin-bottom: 60px;
+}
+
 
 
 
@@ -144,7 +182,7 @@
 
 
 
-/* Navegación */
+/* Navegaciï¿½n */
 
 
 .logo{
@@ -180,6 +218,7 @@
 	transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0,0,0);
 	border-bottom: 4px solid #046F80;
+	font-family: var(--secondary-font);
 }
 
 .nav .wrap{
@@ -310,7 +349,7 @@ body.nav_fixed .nav .wrap{
 		transform: translateX(0%); 
 	}
 }
-/* Fin navegación*/
+/* Fin navegaciï¿½n*/
 
 
 /* Formulario de contacto*/
@@ -534,6 +573,7 @@ body.nav_fixed .nav .wrap{
   color: #fff; 
   border: 2px solid #4CAF50;
   align-items: center;
+  font-family: var(--secondary-font);
 }
 
 .button:hover {
