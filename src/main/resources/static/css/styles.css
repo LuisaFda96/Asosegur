@@ -134,7 +134,36 @@
 	font-family: var(--primary-font);
 }
 
+.fuente{
+	font-family: var(--secondary-font);
+}
 
+
+.btn {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: transparent; 
+  color: #4CAF50; 
+  border: 2px solid #4CAF50;
+  align-items: center;
+  font-family: var(--secondary-font);
+  margin-bottom: 60px;
+}
+
+.btn:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.texto-parte-2-inicio{
+	margin-bottom: 60px;
+}
 
 /*Fin pág inicio*/
 
@@ -150,7 +179,7 @@
 .logo{
 	font-size: 70px;
 	font-family: var(--primary-font);
-}
+}px
 
 .logo-main{
 	height: 150px;
@@ -180,6 +209,7 @@
 	transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0,0,0);
 	border-bottom: 4px solid #046F80;
+	font-family: var(--secondary-font);
 }
 
 .nav .wrap{
@@ -534,6 +564,7 @@ body.nav_fixed .nav .wrap{
   color: #fff; 
   border: 2px solid #4CAF50;
   align-items: center;
+  font-family: var(--secondary-font);
 }
 
 .button:hover {
