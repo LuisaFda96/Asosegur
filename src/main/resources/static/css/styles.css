@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 :root { -
 	--primary-font: 'Bree Serif', serif; 
 	--secondary-font: 'Roboto', sans-serif; 
@@ -127,6 +128,8 @@
 	flex-wrap: inherit;
 }
 =======
+=======
+>>>>>>> principal
 * {
 	margin: 0;
 	padding: 0;
@@ -136,8 +139,15 @@
 .wrapper {
   min-height: calc(100% - 4rem);
 }
-
 :root { 
+	--primary-font: 'Bree Serif', serif; 
+	--secondary-font: 'Roboto', sans-serif; 
+	--blanco: #fff; 
+	--color1: #003740;
+	--color2: #046F80;
+	--color3: #07DCFF;
+	--color4: #023840;
+	--color5: #07C8E6;
 	--facebook: #3b5999; 
 	--instagram: #e4405f; 
 	--whatsapp: #4AC959;
@@ -204,16 +214,20 @@
 }
 
 
-/*Pág inicio*/
+/*Pág inicio   rgba(161,196,253,0.6) 0%, rgba(194,233,251,0.6)*/
 .main{
 	min-height: 500px;
-	background-image: linear-gradient(to top, rgba(161,196,253,0.6) 0%, rgba(194,233,251,0.6) 100%), url("../img/i.jpg") ;
+	background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.7) 100%), url("../img/i.jpg") ;
 	margin-top: 65px;
 	padding: 80px 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.carrusel{
+	margin-top: 65px;
 }
 
 .cabecera{
@@ -231,6 +245,7 @@
 	font-size: 70px;
 	margin-bottom: 40px;
 	color: #046f80;
+	font-family: var(--primary-font);
 }
 
 .cabecera p{
@@ -247,9 +262,40 @@
 	margin-bottom: 40px;
 }
 
+.fuente-titulo{
+	font-family: var(--primary-font);
+}
+
+.fuente{
+	font-family: var(--secondary-font);
+}
 
 
+.btn {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: transparent; 
+  color: #4CAF50; 
+  border: 2px solid #4CAF50;
+  align-items: center;
+  font-family: var(--secondary-font);
+  margin-bottom: 60px;
+}
 
+.btn:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.texto-parte-2-inicio{
+	margin-bottom: 60px;
+}
 
 /*Fin pág inicio*/
 
@@ -264,7 +310,8 @@
 
 .logo{
 	font-size: 70px;
-}
+	font-family: var(--primary-font);
+}px
 
 .logo-main{
 	height: 150px;
@@ -294,6 +341,7 @@
 	transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0,0,0);
 	border-bottom: 4px solid #046F80;
+	font-family: var(--secondary-font);
 }
 
 .nav .wrap{
@@ -604,11 +652,12 @@ body.nav_fixed .nav .wrap{
 }
 
 .parte-1{
-	background: url("../img/bg.jpg");
+	background-image:  radial-gradient(circle, rgba(176,174,238,0.5) 0%, rgba(29,30,31,0.5) 100%), url("../img/bg.jpg");
 	background-position: center; 
   	background-repeat: no-repeat;
   	background-size: cover;
   	height: 100vh;
+  	width: 100%;
   	display: flex;
    	align-items: center;
    	justify-content: center;
@@ -616,7 +665,7 @@ body.nav_fixed .nav .wrap{
 
 .contenido-parte-1{
 	background: rgba(0,0,0,.3);
-	width: 100%;
+	width: 80%;
    	padding: 20px;
 }
 
@@ -647,10 +696,131 @@ body.nav_fixed .nav .wrap{
   color: #fff; 
   border: 2px solid #4CAF50;
   align-items: center;
+  font-family: var(--secondary-font);
 }
 
 .button:hover {
   background-color: #4CAF50;
   color: #fff;
 }
+<<<<<<< HEAD
+>>>>>>> principal
+=======
+
+.titulo-dos{
+	color: red;
+	font-weight: 700;
+}
+.navbar-nav .nav-link:hover{
+	border: solid 1px #07DCFF;
+	border-radius: 10px 30px;
+	/* 	opacity: 0.5; */
+}
+.titulo{
+	color: var(--color3);
+	font-family: var(--primary-font);
+	font-size: 40px;
+	font-weight: 700;
+	
+}
+.titulo1{
+	color: var(--blanco);
+	font-family: var(--secondary-font);
+	font-size: 25px;
+/* 	font-weight: 600; */
+	
+}
+
+
+.briefcase {
+	background: #fafafa;
+	padding: 20px;
+}
+
+.project {
+	/* border-top-color:  red;
+    border-top-width: 15px;
+    border-top-style: solid; */
+	/*     border: 1px solid gray; */
+	border-radius: 10px;
+	margin-bottom: 15px;
+	padding: 20px;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	
+}
+
+.project-course, .project-date, .project-url {
+	margin: 10px 0;
+}
+
+.project-description {
+	font-size: 20px;
+	font-family: var(--secondary-font);
+}
+
+
+.project-title {
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: var(--primary-font);
+	color: var(--color4);
+	
+}
+
+.project-details {
+	width: 50%;
+}
+
+.project-imageContainer {
+	width: 50%;
+}
+
+.project-imageContainer {
+	max-width: 100%;
+}
+
+
+.logo-asosegur {
+	margin: 0;
+}
+
+.logo-asosegur {
+	width: 300px;
+}
+
+.jardineria-hero{
+	height: 100%;
+	width: 100%;
+	filter:brightness(0.2);
+	
+}
+
+
+.jardineria-img {
+	opacity: 0.5;
+}
+
+.jardineria-img:hover {
+	opacity: 1.0;
+}
+
+
+.container {
+/* 	border: 1px solid red; */
+	max-width: 1000px;
+	margin: 0 auto;
+	flex: 1;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+}
+/*  servicios */
 >>>>>>> principal
